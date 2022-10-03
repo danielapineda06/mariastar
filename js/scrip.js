@@ -35,3 +35,17 @@ if ((nombreIngeresado !="") && (apellidoIngeresado !="")){
     //volvemos a solicitar un dato. En la proxima interaccion se evalua si no es Esc.
     entrada = prompt ("1-Paquetes\n2 - servicios\n3 - mensaje\n Esc - Salir");
  }
+ function bienvenidos(a,b) {
+    alert("bienvenidos" + a + " " + b)
+    console.log(a)
+    
+ }
+ bienvenidos("Starjobs", "Latam")
+ bienvenidos("Diana", "Gonzalez")
+ bienvenidos("Adriana", "Correa")
+ 
+ function suma(a,b){
+    let resultado = a + b;
+    console.log(resultado)
+ }
+ suma("emaill", "telefono")
