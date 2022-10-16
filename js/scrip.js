@@ -1,4 +1,4 @@
-let texto = prompt ("ingrese SI para comprar\ ingrese NO para salir")
+/*let texto = prompt ("ingrese SI para comprar\ ingrese NO para salir")
 if (texto == "Si"){
     alert ("Gracias por su respuesta.")
 }
@@ -49,3 +49,48 @@ if ((nombreIngeresado !="") && (apellidoIngeresado !="")){
     console.log(resultado)
  }
  suma("emaill", "telefono")
+
+ let productoA = {
+    nombre: "planEmprendedor"
+    precio: 100,
+    stock:20
+ }
+ function producto(nombre,precio,stock){
+    this.nombre: "plan emprendedor";
+    this.precio: 100;
+    this.stock: 20;
+    this.restarStock -= function(cantidad){
+        this.stock -= cantidad
+    }
+
+ }
+ let productoB = new producto("planBasico",10,20)
+ console.log(productoA)
+ console.log(productoB)
+
+ if (productoCompra.toUpperCase() == 'planEmprendedor'){
+    let cantidadProductoPlanEmprenderor = prompt ("ingrese que cantidad de" + planEmprendedor "desea comprar:" )
+    calculoStock(cantidadProductoPlanEmprenderor productoA.stock, ["precio"])
+    productoA.restarStock(cantidadProductoPlanEmprenderor)
+}
+if (productoCompra == 'planBasico'){
+    let cantidadProductoPlanBasico= prompt ("ingrese que cantidad de" + ProductoPlanBasico "desea comprar:" )
+    calculoStock(cantidadProductoPlanBasico productoB.stock, ["precio"])
+    productoB.restarStock(cantidadProductoPlanBasico)
+}
+let productoA = new producto("planEmprendedor",10,20)
+let productoB = new producto("planBasico",10,20)
+let listaProductos = [productoA, productoB]
+let listaNombres = []
+for (const producto of listaProductos){
+    listaNombres.push(producto)
+}
+listaNombres = ["planEmprendedor", "PlanBasico"]
+
+alert("estos son nuestros productos: \n  "listaNombres.join("\n -"))*/
+let productoA = new producto("planEmprendedor",10,20)
+let productoB = new producto("planBasico",10,20)
+let productoC= new producto("planPlata",10,20)
+let listaProductos = [productoA, productoB, productoC]
+let listaProductosConStock = listaProductos.filter((producto)=> producto.stock > 0)
+let listaNombres = listaProductosConStock.map((producto)=> producto.nombre) 
